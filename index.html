@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshita Arun - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Harshita Arun</h2>
+        <a href="#" onclick="showSection('about')">About Me</a>
+        <a href="#" onclick="showSection('qualifications')">Qualifications</a>
+        <a href="#" onclick="showSection('experience')">Experience</a>
+        <a href="#" onclick="showSection('projects')">Projects</a>
+        <a href="#" onclick="showSection('achievements')">Achievements</a>
+        <a href="#" onclick="showSection('contact')">Contact</a>
+    </div>
+    <div class="main-content">
+        
+        <!-- About Me Section -->
+        <div id="about" class="section active">
+            <div class="content">
+                <img src="images/myphoto.jpg" alt="Harshita Arun" class="photo">
+                <h1>About Me</h1>
+                <p>
+                    Hi, I'm Harshita Arun, a passionate Software Engineer. I thrive on solving complex problems, love coding, and enjoy leveraging new technologies to build efficient, innovative solutions. Apart from this I like spending time in: 
+                </p><br>
+                
+                <!-- Hobbies Slider -->
+                <div class="hobby-slider">
+                    <div class="hobby-card">
+                        <h2>☘️ Nature</h2>
+                        <img src="images/nature.jpg" alt="Nature">
+                        <p>Nature can be the best therapy. I always find it relaxing walking in Nature.</p>
+                    </div>
+                    <div class="hobby-card">
+                        <h2>✈️ Traveling</h2>
+                        <img src="images/travel.jpg" alt="Traveling">
+                        <p>I love exploring new places, experiencing different cultures, and capturing beautiful landscapes.</p>
+                    </div>
+                    <div class="hobby-card">
+                        <h2>📚 Reading</h2>
+                        <img src="images/reading.jpg" alt="Reading">
+                        <p>Books are my escape. I enjoy reading fiction and self-improvement books.</p>
+                    </div>
+                </div>
+
+                <!-- Dot Indicators -->
+                <div class="dots-container">
+                    <span class="dot active" onclick="showCard(0)"></span>
+                    <span class="dot" onclick="showCard(1)"></span>
+                    <span class="dot" onclick="showCard(2)"></span>
+                </div>
+            </div>
+        </div>
+
+<script src="script.js"></script>
+
+        <!-- Qualifications Section -->
+        <div id="qualifications" class="section">
+            <div class="content">
+                <h1>Qualifications</h1>
+                <p>
+                    <strong>Harcourt Butler Technical University (HBTU), Kanpur (2018-2022)</strong><br>
+                    B.Tech. in Computer Science and Engineering<br>
+                    CGPA: 7.85 / 10<br>
+                    Coursework: Data Structure, DBMS, Operating System,Computer Networks, Software Engineering, Programming language (C, C++) <br><br>
+                    <strong>S.V.M.V.P Girls Inter College (2017):</strong><br>
+                    Higher Secondary Certificate<br><br>
+                    <strong>Advanced Diploma in Computer Applications</strong><br>
+                </p>
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div id="experience" class="section">
+            <div class="content">
+                <h1>Work Experience</h1>
+                <div class="card">
+                    <h3>Software Development Engineer, Paytm </h3>
+                    <ul>
+                        <li>Developed RESTful APIs for web services handling over 0.5 million requests/day.</li>
+                        <li>Transitioned data serving to ElasticSearch, reducing response time by 25%.</li>
+                        <li>Enhanced GIS-based agent assignment through polygon territory management.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Software Engineer Intern, Paytm </h3>
+                    <ul>
+                        <li>Maintained operational excellence reports and provided key insights.</li>
+                        <li>Resolved software defects and technical issues, ensuring the reliability of critical system components.</li>
+                        <li>Tech Stack: Junit, Java, Spring Boot, Kibana, Grafana</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Intern, Sahu Technologies </h3>
+                    <ul>
+                        <li>Developed a book store website and prepared a technical document on JavaScript.</li>
+                        <li>Ranked in the top 10 among intern project submissions.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div id="projects" class="section">
+            <div class="content">
+                <h1>Projects</h1>
+                <div class="card">
+                    <h3>Library Management System</h3>
+                    <p>
+                        <strong>Books4U</strong> is a dynamic user-friendly Book Store website featuring a homepage showcasing featured books, user sign up functionality and cart system allowing users to add book and complete orders online.<br>
+                        <strong>Tech Stack:</strong> HTML, CSS, JavaScript
+                    </p>
+                    <button class="project-button" onclick="window.open('https://harshita-12.github.io/online-book-store/', '_blank')">Show Project</button>
+                </div>
+                <div class="card">
+                    <h3>Product Recommendation System</h3>
+                    <p>
+                        Engineered a content-based recommendation system. Applied Natural Language Feature Engineering using NLP Models to recommend similar products on e-commerce websites by using Amazon product advertising API.<br>
+                        <strong>Tech Stack:</strong> Python, BoW, TF-IDF, Word2Vec
+                    </p>
+                    <button class="project-button" onclick="window.open('https://github.com/harshita-12/product-recommendation-ai/blob/main/recommendations.ipynb', '_blank')">Show Project</button>
+                </div>
+                <div class="card">
+                    <h3>Dominant color Extraction</h3>
+                    <p>
+                         The K most dominant colors in an image are extracted out from the image using K-Means Clustering algorithm <br>
+                        <strong>Tech Stack:</strong> Python, ML(K-Means)
+                    </p>
+                    <button class="project-button" onclick="window.open('https://github.com/harshita-12/Dominant_Color_Extraction/blob/main/Dominat_color_extraction/Me_dominant_color_extraction.ipynb', '_blank')">Show Project</button>
+                </div>
+                <div class="card">
+                    <h3>Face Recognition System</h3>
+                    <p>
+                        Implemented the K-NN classification algorithm. Utilised OpenCV and HaarCascade for precise frontal face detection <br>
+                        <strong>Tech Stack:</strong> Python, ML, OpenCV
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Achievements Section -->
+        <div id="achievements" class="section">
+            <div class="content">
+                <h1>Achievements</h1>
+                <div class="achievement-card">
+                    <p>⭐ Received ‘Rising Star Certificate’ for performance at Paytm</p>
+                    <img src="images/risingstar.jpg" alt="Rising Star Certificate">
+                </div>
+                <div class="achievement-card">
+                    <p>⭐ Certificate of AI Mafia by Coding Club</p>
+                    <img src="images/aimafia.jpg" alt="Certificate of AI Mafia by Coding Club">
+                </div>
+                <div class="achievement-card">
+                    <p>⭐ Solved 300+ coding problems on various platforms</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Contact Section -->
+        <div id="contact" class="section">
+            <div class="content">
+                <h1>Contact Me</h1>
+                <p><strong>Phone:</strong> +91 9129****11</p>
+                <p><strong>Email:</strong> harshitaa***@gmail.com</p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/harshita-arun-589ab6192/" target="_blank">LinkedIn Profile</a></p>
+                <p><strong>Address:</strong> Hardoi, Uttar Pradesh, India</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
+<footer class="footer">
+    <p>&copy; 2025 Created by Harshita Arun.</p>
+</footer>
