@@ -7,191 +7,228 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="sidebar">
-        <h2>Harshita Arun</h2>
-        <a href="#" onclick="showSection('about')">About Me</a>
-        <a href="#" onclick="showSection('qualifications')">Qualifications</a>
-        <a href="#" onclick="showSection('experience')">Experience</a>
-        <a href="#" onclick="showSection('projects')">Projects</a>
-        <a href="#" onclick="showSection('achievements')">Achievements</a>
-        <a href="#" onclick="showSection('contact')">Contact</a>
-    </div>
-    <div class="main-content">
-        
-        <!-- About Me Section -->
-        <div id="about" class="section active">
+    <header class="top-nav">
+        <h2 class="brand">Harshita Arun</h2>
+        <nav class="nav-links">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#qualifications" class="nav-link">Qualifications</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#achievements" class="nav-link">Achievements</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <div class="doc-actions">
+            <a href="resume/Harshita_Arun_Resume.pdf" class="resume-button" download>Download Resume</a>
+            <a href="https://drive.google.com/file/d/1QYhhejIUrEAWrbohwJ6ejXPtdMbfGS3z/view?usp=drive_link" class="resume-button resume-button-secondary" target="_blank" rel="noreferrer">View CV</a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section id="about" class="section">
             <div class="content">
                 <img src="images/myphoto.jpg" alt="Harshita Arun" class="photo">
                 <h1>About Me</h1>
                 <p>
-                    Hi, I'm Harshita Arun, a passionate Software Engineer. I thrive on solving complex problems, love coding, and enjoy leveraging new technologies to build efficient, innovative solutions. Apart from this I like spending time in: 
-                </p><br>
-                
-                <!-- Hobbies Slider -->
+                    Hi, I'm Harshita Arun, a Full Stack Engineer with 3+ years of experience designing and owning scalable, high-reliability systems in the
+payments domain (BBPS, FASTag, e-Mandates, transaction lifecycle & reconciliation). Strong believer in understanding
+and reading code deeply before building on top of it, while actively leveraging AI tools to ship smarter and stay aligned with evolving market needs.
+<br> Apart from this I like spending time in:
+                </p>
+
                 <div class="hobby-slider">
                     <div class="hobby-card">
-                        <h2>☘️ Nature</h2>
+                        <h2>Nature</h2>
                         <img src="images/nature.jpg" alt="Nature">
                         <p>Nature can be the best therapy. I always find it relaxing walking in Nature.</p>
                     </div>
                     <div class="hobby-card">
-                        <h2>✈️ Traveling</h2>
+                        <h2>Traveling</h2>
                         <img src="images/travel.jpg" alt="Traveling">
                         <p>I love exploring new places, experiencing different cultures, and capturing beautiful landscapes.</p>
                     </div>
                     <div class="hobby-card">
-                        <h2>📚 Reading</h2>
+                        <h2>Reading</h2>
                         <img src="images/reading.jpg" alt="Reading">
                         <p>Books are my escape. I enjoy reading fiction and self-improvement books.</p>
                     </div>
                 </div>
 
-                <!-- Dot Indicators -->
                 <div class="dots-container">
                     <span class="dot active" onclick="showCard(0)"></span>
                     <span class="dot" onclick="showCard(1)"></span>
                     <span class="dot" onclick="showCard(2)"></span>
                 </div>
             </div>
-        </div>
+        </section>
 
-<script src="script.js"></script>
-
-        <!-- Qualifications Section -->
-        <div id="qualifications" class="section">
+        <section id="qualifications" class="section">
             <div class="content">
                 <h1>Qualifications</h1>
                 <p>
                     <strong>Harcourt Butler Technical University (HBTU), Kanpur (2018-2022)</strong><br>
                     B.Tech. in Computer Science and Engineering<br>
                     CGPA: 7.85 / 10<br>
-                    Coursework: Data Structure, DBMS, Operating System,Computer Networks, Software Engineering, Programming language (C, C++) <br><br>
+                    Coursework: Data Structure, DBMS, Operating System, Computer Networks, Software Engineering, Programming language (C, C++) <br><br>
                     <strong>S.V.M.V.P Girls Inter College (2017):</strong><br>
                     Higher Secondary Certificate<br><br>
                     <strong>Advanced Diploma in Computer Applications</strong><br>
                 </p>
             </div>
-        </div>
+        </section>
 
-        <!-- Experience Section -->
-        <div id="experience" class="section">
+        <section id="experience" class="section experience-section">
             <div class="content">
                 <h1>Work Experience</h1>
-                <div class="card">
-                    <h3>Software Development Engineer, Paytm </h3>
-                    <ul>
-                        <li>Developed RESTful APIs for web services handling over 0.5 million requests/day.</li>
-                        <li>Transitioned data serving to ElasticSearch, reducing response time by 25%.</li>
-                        <li>Enhanced GIS-based agent assignment through polygon territory management.</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>Software Engineer Intern, Paytm </h3>
-                    <ul>
-                        <li>Maintained operational excellence reports and provided key insights.</li>
-                        <li>Resolved software defects and technical issues, ensuring the reliability of critical system components.</li>
-                        <li>Tech Stack: Junit, Java, Spring Boot, Kibana, Grafana</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>Intern, Sahu Technologies </h3>
-                    <ul>
-                        <li>Developed a book store website and prepared a technical document on JavaScript.</li>
-                        <li>Ranked in the top 10 among intern project submissions.</li>
-                    </ul>
+                <div class="experience-timeline">
+                    <article class="exp-item">
+                        <div class="exp-header">
+                            <h3>Software Development Engineer <span>(Blackbuck)</span></h3>
+                            <p class="exp-duration">Mar 2025 - Present</p>
+                        </div>
+                        <p class="exp-domain">Payments | FASTag</p>
+                        <ul>
+                            <li>Led end-to-end architecture and delivery of Bharat Bill Payment System (BBPS) integration (HLD to production), enabling third-party FASTag recharges; ensured scalability, regulatory compliance (NPCI), and seamless settlement flows.</li>
+                            <li>Developed and integrated mandate (AutoPay) functionality from design to deployment, enabling seamless recurring payments for FASTag recharges. Integrated Juspay for mandate orchestration and payment processing, ensuring secure tokenization, authorization flows, and high transaction reliability.</li>
+                            <li>Designed robust payment workflows covering authorization, capture, reconciliation, settlement, and failure handling across multiple payment modes.</li>
+                            <li>Optimized ledger download functionality by improving query performance and reducing response latency, enhancing system efficiency and user experience.</li>
+                            <li>Collaborated cross-functionally with product, finance, and compliance teams to ensure smooth rollout and operational alignment.</li>
+                        </ul>
+                    </article>
+
+                    <article class="exp-item">
+                        <div class="exp-header">
+                            <h3>Software Development Engineer <span>(Paytm)</span></h3>
+                            <p class="exp-duration">2022 - 2024</p>
+                        </div>
+                        <p class="exp-domain">Tech-Merchant team</p>
+                        <ul>
+                            <li>Built and scaled backend services for Merchant Dashboard workflows, delivering reliable REST APIs serving over 0.5 million requests per day.</li>
+                            <li>Designed and shipped customer-facing product features end-to-end, collaborating closely with product and frontend teams to improve merchant usability.</li>
+                            <li>Engineered migration of read-heavy data flows from traditional databases to ElasticSearch (ES), reducing response latency by 25% and improving query throughput.</li>
+                            <li>Implemented and enhanced polygon-based territory management to improve precision of agent assignment using GIS capabilities.</li>
+                        </ul>
+                    </article>
+
+                    <article class="exp-item">
+                        <div class="exp-header">
+                            <h3>Software Engineer Intern <span>(Paytm)</span></h3>
+                            <p class="exp-duration">January - July 2022</p>
+                        </div>
+                        <ul>
+                            <li>Improved service robustness with stronger exception handling, production bug fixes, and performance-focused backend optimizations.</li>
+                            <li>Worked as a back-end intern, compiled and maintained operational excellence reports, and provided key insights into system efficiency.</li>
+                            <li>Actively resolved software defects, helping improve reliability of core system components.</li>
+
+                        </ul>
+                    </article>
+                    <article class="exp-item">
+                        <div class="exp-header">
+                            <h3>Intern At Sahu Technology <span>(Paytm)</span></h3>
+                            <p class="exp-duration">September - Decemeber 2021</p>
+                        </div>
+                        <ul>
+                            <li>During my internship, I have developed a book store website using HTML, CSS, JavaScript.</li>
+                            <li>Prepared a technical documentation.</li>
+
+                        </ul>
+                    </article>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Projects Section -->
-        <div id="projects" class="section">
+        <section id="projects" class="section projects-section">
             <div class="content">
                 <h1>Projects</h1>
-                <div class="card">
-                    <h3>Twitter Clone: Scalable Social Media Platform</h3>
-                    <p>
-                        Designed a simple Twitter clone built using Spring MVC, Java, Html, CSS. It allows users to register, log in, post tweets, retweet, and view their profile. Spring MVC for the back-end architecture with response time under 50 milliseconds for all APIs.<br>
-                        <strong>Tech Stack:</strong>Spring MVC, Java, MySql, HTML, CSS
-                    </p>
-                    <button class="project-button" onclick="window.open('https://github.com/harshita-12/twitter_clone', '_blank')">Show Project</button>
-                </div>
-                <div class="card">
-                    <h3>Library Management System</h3>
-                    <p>
-                        <strong>Books4U</strong> is a dynamic user-friendly Book Store website featuring a homepage showcasing featured books, user sign up functionality and cart system allowing users to add book and complete orders online.<br>
-                        <strong>Tech Stack:</strong> HTML, CSS, JavaScript
-                    </p>
-                    <button class="project-button" onclick="window.open('https://harshita-12.github.io/online-book-store/', '_blank')">Show Project</button>
-                    <button class="project-button" onclick="window.open('https://github.com/harshita-12/online-book-store', '_blank')">Source code</button>
-                </div>
-                <div class="card">
-                    <h3>Product Recommendation System</h3>
-                    <p>
-                        Engineered a content-based recommendation system. Applied Natural Language Feature Engineering using NLP Models to recommend similar products on e-commerce websites by using Amazon product advertising API.<br>
-                        <strong>Tech Stack:</strong> Python, BoW, TF-IDF, Word2Vec
-                    </p>
-                    <button class="project-button" onclick="window.open('https://github.com/harshita-12/product-recommendation-ai/blob/main/recommendations.ipynb', '_blank')">Show Project</button>
-                </div>
-                <div class="card">
-                    <h3>Dominant color Extraction</h3>
-                    <p>
-                         The K most dominant colors in an image are extracted out from the image using K-Means Clustering algorithm <br>
-                        <strong>Tech Stack:</strong> Python, ML(K-Means)
-                    </p>
-                    <button class="project-button" onclick="window.open('https://github.com/harshita-12/Dominant_Color_Extraction/blob/main/Dominat_color_extraction/Me_dominant_color_extraction.ipynb', '_blank')">Show Project</button>
-                </div>
-                <div class="card">
-                    <h3>Face Recognition System</h3>
-                    <p>
-                        Implemented the K-NN classification algorithm. Utilised OpenCV and HaarCascade for precise frontal face detection <br>
-                        <strong>Tech Stack:</strong> Python, ML, OpenCV
-                    </p>
+                <div class="projects-showcase">
+                    <article class="project-row project-row-featured">
+                        <h3>Twitter Clone: Scalable Social Media Platform</h3>
+                        <p class="project-description">Designed a Twitter clone using Spring MVC and Java with core social features like sign up, login, tweet posting, retweeting, and profile view. Optimized backend APIs to maintain response times under 50 ms.</p>
+                        <p class="project-stack">Spring MVC, Java, MySQL, HTML, CSS</p>
+                        <div class="project-actions">
+                            <a class="project-button" href="https://github.com/harshita-12/twitter_clone" target="_blank" rel="noreferrer">View Project</a>
+                        </div>
+                    </article>
+
+                    <article class="project-row">
+                        <h3>Library Management System (Books4U)</h3>
+                        <p class="project-description">Built a user-friendly book store website with featured books, user sign-up flow, cart management, and order completion journeys.</p>
+                        <p class="project-stack">HTML, CSS, JavaScript</p>
+                        <div class="project-actions">
+                            <a class="project-button" href="https://harshita-12.github.io/online-book-store/" target="_blank" rel="noreferrer">Live Demo</a>
+                            <a class="project-button project-button-secondary" href="https://github.com/harshita-12/online-book-store" target="_blank" rel="noreferrer">Source Code</a>
+                        </div>
+                    </article>
+
+                    <article class="project-row">
+                        <h3>Product Recommendation System</h3>
+                        <p class="project-description">Engineered a content-based recommendation system using NLP-based feature engineering to suggest similar products in e-commerce scenarios.</p>
+                        <p class="project-stack">Python, BoW, TF-IDF, Word2Vec</p>
+                        <div class="project-actions">
+                            <a class="project-button" href="https://github.com/harshita-12/product-recommendation-ai/blob/main/recommendations.ipynb" target="_blank" rel="noreferrer">View Notebook</a>
+                        </div>
+                    </article>
+
+                    <article class="project-row">
+                        <h3>Dominant Color Extraction</h3>
+                        <p class="project-description">Extracted K dominant colors from images using K-Means clustering to analyze and summarize visual palettes efficiently.</p>
+                        <p class="project-stack">Python, ML (K-Means)</p>
+                        <div class="project-actions">
+                            <a class="project-button" href="https://github.com/harshita-12/Dominant_Color_Extraction/blob/main/Dominat_color_extraction/Me_dominant_color_extraction.ipynb" target="_blank" rel="noreferrer">View Notebook</a>
+                        </div>
+                    </article>
+
+                    <article class="project-row">
+                        <h3>Face Recognition System</h3>
+                        <p class="project-description">Implemented K-NN classification with OpenCV and HaarCascade for precise frontal face detection and recognition pipelines.</p>
+                        <p class="project-stack">Python, ML, OpenCV</p>
+                        <div class="project-actions">
+                            <span class="project-note">Project details available on request</span>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Achievements Section -->
-        <div id="achievements" class="section">
+        <section id="achievements" class="section">
             <div class="content">
                 <h1>Achievements</h1>
-                <div class="achievement-card">
-                    <p>⭐ Received ‘Rising Star Certificate’ for performance at Paytm</p>
-                    <img src="images/risingstar.jpg" alt="Rising Star Certificate">
-                </div>
-                <div class="achievement-card">
-                    <p>⭐ Certificate of AI Mafia by Coding Club</p>
-                    <img src="images/aimafia.jpg" alt="Certificate of AI Mafia by Coding Club">
-                </div>
-                <div class="achievement-card">
-                    <p>⭐ Solved 300+ coding problems on various platforms</p>
+                <div class="achievements-showcase">
+                    <article class="achievement-row">
+                        <p class="achievement-tag">Recognition</p>
+                        <h3>Rising Star Award</h3>
+                        <p class="achievement-desc">Received Rising Star Certificate for performance at Paytm.</p>
+                        <img src="images/risingstar.jpg" alt="Rising Star Certificate">
+                    </article>
+                    <article class="achievement-row">
+                        <p class="achievement-tag">Certification</p>
+                        <h3>AI Mafia Certificate</h3>
+                        <p class="achievement-desc">Earned certification from Coding Club for AI Mafia.</p>
+                        <img src="images/aimafia.jpg" alt="Certificate of AI Mafia by Coding Club">
+                    </article>
+                    <article class="achievement-row achievement-row-highlight">
+                        <p class="achievement-tag">Coding</p>
+                        <h3>300+ Problems Solved</h3>
+                        <p class="achievement-desc">Solved 300+ coding problems across leading competitive programming platforms.</p>
+                    </article>
                 </div>
             </div>
-        </div>
+        </section>
 
-
-        <!-- Contact Section -->
-        <div id="contact" class="section">
+        <section id="contact" class="section">
             <div class="content">
                 <h1>Contact Me</h1>
                 <p><strong>Phone:</strong> +91 9129****11</p>
-                <p><strong>Email:</strong> harshitaa***@gmail.com</p>
-                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/harshita-arun-589ab6192/" target="_blank">LinkedIn Profile</a></p>
+                <p><strong>Email:</strong> harshitaarun12@gmail.com</p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/harshita-arun-589ab6192/" target="_blank" rel="noreferrer">LinkedIn Profile</a></p>
                 <p><strong>Address:</strong> Hardoi, Uttar Pradesh, India</p>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
-    <script>
-        function showSection(sectionId) {
-            const sections = document.querySelectorAll('.section');
-            sections.forEach(section => {
-                section.classList.remove('active');
-            });
-            document.getElementById(sectionId).classList.add('active');
-        }
-    </script>
+    <footer class="footer">
+        <p>&copy; 2025 Created by Harshita Arun.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-<footer class="footer">
-    <p>&copy; 2025 Created by Harshita Arun.</p>
-</footer>
