@@ -11,15 +11,17 @@
         <h2 class="brand">Harshita Arun</h2>
         <nav class="nav-links">
             <a href="#about" class="nav-link">About</a>
-            <a href="#qualifications" class="nav-link">Qualifications</a>
             <a href="#experience" class="nav-link">Experience</a>
+            <a href="#ai-engineering" class="nav-link">AI Work</a>
+            <a href="#education" class="nav-link">Education</a>
             <a href="#projects" class="nav-link">Projects</a>
             <a href="#achievements" class="nav-link">Achievements</a>
+            <a href="#skills" class="nav-link">Skills</a>
             <a href="#contact" class="nav-link">Contact</a>
         </nav>
         <div class="doc-actions">
             <a href="resume/Harshita_Arun_Resume.pdf" class="resume-button" download>Download Resume</a>
-            <a href="https://drive.google.com/file/d/1QYhhejIUrEAWrbohwJ6ejXPtdMbfGS3z/view?usp=drive_link" class="resume-button resume-button-secondary" target="_blank" rel="noreferrer">View CV</a>
+            <a href="https://drive.google.com/file/d/1lnMHnaPQkubpH4ytWI5DwU0RHKAgFzar/view" class="resume-button resume-button-secondary" target="_blank" rel="noreferrer">View CV</a>
         </div>
     </header>
 
@@ -29,10 +31,14 @@
                 <img src="images/myphoto.jpg" alt="Harshita Arun" class="photo">
                 <h1>About Me</h1>
                 <p>
-                    Hi, I'm Harshita Arun, a Full Stack Engineer with 3+ years of experience designing and owning scalable, high-reliability systems in the
-payments domain (BBPS, FASTag, e-Mandates, transaction lifecycle & reconciliation). Strong believer in understanding
-and reading code deeply before building on top of it, while actively leveraging AI tools to ship smarter and stay aligned with evolving market needs.
-<br> Apart from this I like spending time in:
+                    Hi, I'm Harshita Arun, a Software Development Engineer with 3+ years of experience designing, building, and owning scalable,
+                    high-availability distributed systems in Payments and FinTech. I work across end-to-end SDLC, microservices, RESTful APIs,
+                    AWS-backed systems, and SaaS platforms, with strong hands-on experience in Java, Spring Boot, SQL, ElasticSearch, Kafka,
+                    and production reliability.
+                    <br><br>
+                    I also enjoy using AI-assisted development tools and custom AI agents to improve engineering productivity, delivery quality,
+                    and release confidence.
+                    <br> Apart from this I like spending time in:
                 </p>
 
                 <div class="hobby-slider">
@@ -61,21 +67,6 @@ and reading code deeply before building on top of it, while actively leveraging 
             </div>
         </section>
 
-        <section id="qualifications" class="section">
-            <div class="content">
-                <h1>Qualifications</h1>
-                <p>
-                    <strong>Harcourt Butler Technical University (HBTU), Kanpur (2018-2022)</strong><br>
-                    B.Tech. in Computer Science and Engineering<br>
-                    CGPA: 7.85 / 10<br>
-                    Coursework: Data Structure, DBMS, Operating System, Computer Networks, Software Engineering, Programming language (C, C++) <br><br>
-                    <strong>S.V.M.V.P Girls Inter College (2017):</strong><br>
-                    Higher Secondary Certificate<br><br>
-                    <strong>Advanced Diploma in Computer Applications</strong><br>
-                </p>
-            </div>
-        </section>
-
         <section id="experience" class="section experience-section">
             <div class="content">
                 <h1>Work Experience</h1>
@@ -87,11 +78,11 @@ and reading code deeply before building on top of it, while actively leveraging 
                         </div>
                         <p class="exp-domain">Payments | FASTag</p>
                         <ul>
-                            <li>Led end-to-end architecture and delivery of Bharat Bill Payment System (BBPS) integration (HLD to production), enabling third-party FASTag recharges; ensured scalability, regulatory compliance (NPCI), and seamless settlement flows.</li>
-                            <li>Developed and integrated mandate (AutoPay) functionality from design to deployment, enabling seamless recurring payments for FASTag recharges. Integrated Juspay for mandate orchestration and payment processing, ensuring secure tokenization, authorization flows, and high transaction reliability.</li>
-                            <li>Designed robust payment workflows covering authorization, capture, reconciliation, settlement, and failure handling across multiple payment modes.</li>
-                            <li>Optimized ledger download functionality by improving query performance and reducing response latency, enhancing system efficiency and user experience.</li>
-                            <li>Collaborated cross-functionally with product, finance, and compliance teams to ensure smooth rollout and operational alignment.</li>
+                            <li>Led end-to-end architecture, design, development, and delivery of BBPS integration from HLD to production, enabling third-party FASTag recharges across multiple providers while meeting NPCI compliance and settlement requirements.</li>
+                            <li>Designed scalable microservice-based payment workflows for settlement, reconciliation, and transaction lifecycle management.</li>
+                            <li>Implemented AutoPay e-mandates with Juspay for mandate creation, tokenization, and recurring payment orchestration with high reliability.</li>
+                            <li>Strengthened payment reliability with robust error handling, idempotency controls, retry mechanisms, and lifecycle safeguards.</li>
+                            <li>Worked with AWS-based infrastructure supporting scalable microservice and payment processing systems in an Agile/Scrum environment.</li>
                         </ul>
                     </article>
 
@@ -102,10 +93,11 @@ and reading code deeply before building on top of it, while actively leveraging 
                         </div>
                         <p class="exp-domain">Tech-Merchant team</p>
                         <ul>
-                            <li>Built and scaled backend services for Merchant Dashboard workflows, delivering reliable REST APIs serving over 0.5 million requests per day.</li>
-                            <li>Designed and shipped customer-facing product features end-to-end, collaborating closely with product and frontend teams to improve merchant usability.</li>
-                            <li>Engineered migration of read-heavy data flows from traditional databases to ElasticSearch (ES), reducing response latency by 25% and improving query throughput.</li>
-                            <li>Implemented and enhanced polygon-based territory management to improve precision of agent assignment using GIS capabilities.</li>
+                            <li>Designed, developed, and maintained RESTful APIs for high-scale merchant onboarding and management systems handling over 0.5 million requests daily.</li>
+                            <li>Optimized backend performance by migrating data retrieval workflows from relational databases to ElasticSearch, reducing response times by 25%.</li>
+                            <li>Built scalable GIS-based agent assignment solutions, improving operational efficiency and territory management accuracy with polygon-based territory mapping.</li>
+                            <li>Participated in architecture discussions, code reviews, and design decisions using Object-Oriented Design principles and coding best practices.</li>
+                            <li>Troubleshot complex production issues, analyzed bottlenecks, and improved scalability, maintainability, and system reliability.</li>
                         </ul>
                     </article>
 
@@ -123,16 +115,50 @@ and reading code deeply before building on top of it, while actively leveraging 
                     </article>
                     <article class="exp-item">
                         <div class="exp-header">
-                            <h3>Intern At Sahu Technology <span>(Paytm)</span></h3>
-                            <p class="exp-duration">September - Decemeber 2021</p>
+                            <h3>Technical Content Writer <span>(Sahu Technologies)</span></h3>
+                            <p class="exp-duration">September - December 2021</p>
                         </div>
                         <ul>
-                            <li>During my internship, I have developed a book store website using HTML, CSS, JavaScript.</li>
-                            <li>Prepared a technical documentation.</li>
-
+                            <li>Created technical content and documentation focused on software development concepts and practical implementation.</li>
+                            <li>Developed a book store website using HTML, CSS, and JavaScript.</li>
                         </ul>
                     </article>
                 </div>
+            </div>
+        </section>
+
+        <section id="ai-engineering" class="section ai-section">
+            <div class="content">
+                <h1>AI-Assisted Engineering</h1>
+                <div class="ai-showcase">
+                    <article class="ai-row">
+                        <h3>Codebase Knowledge AI</h3>
+                        <p>Built a Retrieval-Augmented Generation system for natural-language querying over software repositories using repository ingestion, vector indexing, semantic retrieval, and context-aware answer generation.</p>
+                    </article>
+                    <article class="ai-row">
+                        <h3>Release Validation Automation</h3>
+                        <p>Worked with the team on AI-powered productivity workflows for PR checks, deployment steps, database/config verification, and automated RCA support to reduce manual effort across planning, production readiness, and incident triage.</p>
+                    </article>
+                    <article class="ai-row">
+                        <h3>Developer Delivery Workflows</h3>
+                        <p>Developed reusable Claude Code skills and automation pipelines for requirement interpretation, implementation planning, code analysis, test generation, and release validation.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="content">
+                <h1>Education</h1>
+                <p>
+                    <strong>Harcourt Butler Technical University (HBTU), Kanpur (2018-2022)</strong><br>
+                    B.Tech. in Computer Science and Engineering<br>
+                    CGPA: 7.85 / 10<br>
+                    Coursework: DSA, DBMS, Operating Systems, Computer Networks, C, C++, Algorithm Analysis, Software Engineering<br><br>
+                    <strong>S.V.M.V.P Girls Inter College (2017):</strong><br>
+                    Higher Secondary Certificate<br><br>
+                    <strong>Advanced Diploma in Computer Applications</strong><br>
+                </p>
             </div>
         </section>
 
@@ -161,8 +187,8 @@ and reading code deeply before building on top of it, while actively leveraging 
 
                     <article class="project-row">
                         <h3>Product Recommendation System</h3>
-                        <p class="project-description">Engineered a content-based recommendation system using NLP-based feature engineering to suggest similar products in e-commerce scenarios.</p>
-                        <p class="project-stack">Python, BoW, TF-IDF, Word2Vec</p>
+                        <p class="project-description">Engineered a content-based recommendation system using NLP models to recommend similar products for e-commerce scenarios with Amazon product data.</p>
+                        <p class="project-stack">Python, BoW, TF-IDF, Word2Vec, NLP</p>
                         <div class="project-actions">
                             <a class="project-button" href="https://github.com/harshita-12/product-recommendation-ai/blob/main/recommendations.ipynb" target="_blank" rel="noreferrer">View Notebook</a>
                         </div>
@@ -195,6 +221,12 @@ and reading code deeply before building on top of it, while actively leveraging 
                 <div class="achievements-showcase">
                     <article class="achievement-row">
                         <p class="achievement-tag">Recognition</p>
+                        <h3>Stand Out Performer Award</h3>
+                        <p class="achievement-desc">Received the Stand Out Performer award for efficient performance at Blackbuck.</p>
+                        <img src="images/rockstar.jpg" alt="Stand Out Performer Award">
+                    </article>
+                    <article class="achievement-row">
+                        <p class="achievement-tag">Recognition</p>
                         <h3>Rising Star Award</h3>
                         <p class="achievement-desc">Received Rising Star Certificate for performance at Paytm.</p>
                         <img src="images/risingstar.jpg" alt="Rising Star Certificate">
@@ -214,10 +246,42 @@ and reading code deeply before building on top of it, while actively leveraging 
             </div>
         </section>
 
+        <section id="skills" class="section skills-section">
+            <div class="content">
+                <h1>Skills</h1>
+                <div class="skills-grid">
+                    <article class="skill-group">
+                        <h3>Languages</h3>
+                        <p>Java, Python, C/C++, SQL</p>
+                    </article>
+                    <article class="skill-group">
+                        <h3>Backend</h3>
+                        <p>Spring Boot, Spring MVC, Hibernate, REST APIs, Microservices, Kafka</p>
+                    </article>
+                    <article class="skill-group">
+                        <h3>Cloud & Systems</h3>
+                        <p>AWS, Cloud-native Applications, SaaS Platforms, Distributed Systems</p>
+                    </article>
+                    <article class="skill-group">
+                        <h3>Databases</h3>
+                        <p>MySQL, PostgreSQL, ElasticSearch, MongoDB, NoSQL</p>
+                    </article>
+                    <article class="skill-group">
+                        <h3>AI & Productivity</h3>
+                        <p>RAG, LLM Applications, LangChain, Prompt Engineering, Vector Databases, Claude Code, GitHub Copilot, Codex, Windsurf, Kiro</p>
+                    </article>
+                    <article class="skill-group">
+                        <h3>DevOps & Tools</h3>
+                        <p>Git, Bitbucket, Jenkins, Docker, CI/CD, IntelliJ, Postman, JIRA, Kibana, Grafana, NewRelic, Confluence</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <section id="contact" class="section">
             <div class="content">
                 <h1>Contact Me</h1>
-                <p><strong>Phone:</strong> +91 9129****11</p>
+                <p><strong>Phone:</strong> +91 9129465611</p>
                 <p><strong>Email:</strong> harshitaarun12@gmail.com</p>
                 <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/harshita-arun-589ab6192/" target="_blank" rel="noreferrer">LinkedIn Profile</a></p>
                 <p><strong>Address:</strong> Hardoi, Uttar Pradesh, India</p>
@@ -226,7 +290,7 @@ and reading code deeply before building on top of it, while actively leveraging 
     </main>
 
     <footer class="footer">
-        <p>&copy; 2025 Created by Harshita Arun.</p>
+        <p>&copy; 2026 Created by Harshita Arun.</p>
     </footer>
 
     <script src="script.js"></script>
