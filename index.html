@@ -3,294 +3,341 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harshita Arun - Portfolio</title>
+    <title>Harshita Arun | SDE-2 Backend & Payments Engineer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="top-nav">
-        <h2 class="brand">Harshita Arun</h2>
-        <nav class="nav-links">
-            <a href="#about" class="nav-link">About</a>
+        <a class="brand" href="#home" aria-label="Harshita Arun home">
+            <span class="brand-mark">HA</span>
+            <span>
+                <strong>Harshita Arun</strong>
+                <small>SDE-2 Backend Engineer</small>
+            </span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <nav class="nav-links" aria-label="Primary navigation">
             <a href="#experience" class="nav-link">Experience</a>
+            <a href="#systems" class="nav-link">Systems</a>
             <a href="#ai-engineering" class="nav-link">AI Work</a>
-            <a href="#education" class="nav-link">Education</a>
             <a href="#projects" class="nav-link">Projects</a>
-            <a href="#achievements" class="nav-link">Achievements</a>
             <a href="#skills" class="nav-link">Skills</a>
             <a href="#contact" class="nav-link">Contact</a>
         </nav>
-        <div class="doc-actions">
-            <a href="resume/Harshita_Arun_Resume.pdf" class="resume-button" download>Download Resume</a>
-            <a href="https://drive.google.com/file/d/1lnMHnaPQkubpH4ytWI5DwU0RHKAgFzar/view" class="resume-button resume-button-secondary" target="_blank" rel="noreferrer">View CV</a>
-        </div>
     </header>
 
-    <main class="main-content">
-        <section id="about" class="section">
-            <div class="content">
-                <img src="images/myphoto.jpg" alt="Harshita Arun" class="photo">
-                <h1>About Me</h1>
-                <p>
-                    Hi, I'm Harshita Arun, a Software Development Engineer with 3+ years of experience designing, building, and owning scalable,
-                    high-availability distributed systems in Payments and FinTech. I work across end-to-end SDLC, microservices, RESTful APIs,
-                    AWS-backed systems, and SaaS platforms, with strong hands-on experience in Java, Spring Boot, SQL, ElasticSearch, Kafka,
-                    and production reliability.
-                    <br><br>
-                    I also enjoy using AI-assisted development tools and custom AI agents to improve engineering productivity, delivery quality,
-                    and release confidence.
-                    <br> Apart from this I like spending time in:
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <p class="eyebrow">Payments • FASTag • Distributed Systems • AI-Assisted Engineering</p>
+                <h1>Software Development Engineer 2 building reliable payment systems at fintech scale.</h1>
+                <p class="hero-summary">
+                    3+ years across Blackbuck and Paytm, owning backend systems from HLD/LLD to production rollout.
+                    Built BBPS and AutoPay platforms from scratch with settlement, reconciliation, retries,
+                    idempotency, monitoring, and partner integrations.
                 </p>
+                <div class="hero-actions">
+                    <a href="resume/Harshita_Arun_Resume.pdf" class="primary-button" download>Download Resume</a>
+                    <a href="mailto:harshitaarun12@gmail.com" class="secondary-button">Email Me</a>
+                    <a href="https://www.linkedin.com/in/harshita-arun/" class="secondary-button" target="_blank" rel="noreferrer">LinkedIn</a>
+                </div>
+            </div>
+            <aside class="hero-panel" aria-label="Profile highlights">
+                <img src="images/myphoto.jpg" alt="Harshita Arun" class="profile-photo">
+                <div>
+                    <p class="panel-label">Current Role</p>
+                    <h2>SDE-2, Blackbuck</h2>
+                    <p>Backend ownership for payment services, FASTag recharge systems, AutoPay mandates, and reliability workflows.</p>
+                </div>
+                <div class="contact-strip">
+                    <a href="tel:+919129465611">+91 91294 65611</a>
+                    <a href="mailto:harshitaarun12@gmail.com">harshitaarun12@gmail.com</a>
+                </div>
+            </aside>
+        </section>
 
-                <div class="hobby-slider">
-                    <div class="hobby-card">
-                        <h2>Nature</h2>
-                        <img src="images/nature.jpg" alt="Nature">
-                        <p>Nature can be the best therapy. I always find it relaxing walking in Nature.</p>
+        <section class="impact-section" aria-label="Engineering impact">
+            <article>
+                <strong>~40</strong>
+                <span>BBPS FASTag billers enabled through PayU integration</span>
+            </article>
+            <article>
+                <strong>~97%</strong>
+                <span>AutoPay debit presentation success with Juspay mandates</span>
+            </article>
+            <article>
+                <strong>0.5M+</strong>
+                <span>Daily requests handled on Paytm merchant systems</span>
+            </article>
+            <article>
+                <strong>77%</strong>
+                <span>Reduction in long-running cron execution time</span>
+            </article>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Experience</p>
+                <h2>Production ownership across payments, merchant systems, and reliability.</h2>
+            </div>
+            <div class="experience-list">
+                <article class="experience-card featured-card">
+                    <div class="role-meta">
+                        <div>
+                            <h3>Software Development Engineer 2</h3>
+                            <p>Blackbuck • Payments | FASTag</p>
+                        </div>
+                        <span>July 2026 - Present</span>
                     </div>
-                    <div class="hobby-card">
-                        <h2>Traveling</h2>
-                        <img src="images/travel.jpg" alt="Traveling">
-                        <p>I love exploring new places, experiencing different cultures, and capturing beautiful landscapes.</p>
+                    <ul>
+                        <li>Own backend payment services for BBPS and AutoPay platforms with Java, Spring Boot, Kafka, Redis, AWS, and Kubernetes.</li>
+                        <li>Drive production reliability across settlement, reconciliation, retries, idempotency, monitoring, and alerting.</li>
+                    </ul>
+                </article>
+
+                <article class="experience-card">
+                    <div class="role-meta">
+                        <div>
+                            <h3>Software Development Engineer</h3>
+                            <p>Blackbuck • Payments | FASTag</p>
+                        </div>
+                        <span>Mar 2025 - June 2026</span>
                     </div>
-                    <div class="hobby-card">
-                        <h2>Reading</h2>
-                        <img src="images/reading.jpg" alt="Reading">
-                        <p>Books are my escape. I enjoy reading fiction and self-improvement books.</p>
+                    <ul>
+                        <li>Built the BBPS payment service from scratch, covering HLD, LLD, event-driven microservices, PayU integration, NPCI-compliant settlement, and production rollout.</li>
+                        <li>Enabled third-party FASTag recharges across ~40 billers at ~95% success, with an extensible design for future bill categories.</li>
+                        <li>Architected and built AutoPay e-mandates with Juspay for mandate creation, tokenisation, recurring payments, settlement, and reconciliation.</li>
+                        <li>Scaled AutoPay to ~3k new mandates and ~6k debit presentations per day at ~97% success.</li>
+                        <li>Parallelised a long-running cron job from 13+ hours to 3 hours, fixed slow queries to reduce latency from 2 minutes to under 8 seconds, resolved high-CPU alerts, and improved monitoring coverage.</li>
+                    </ul>
+                </article>
+
+                <article class="experience-card">
+                    <div class="role-meta">
+                        <div>
+                            <h3>Software Development Engineer</h3>
+                            <p>Paytm • Tech-Merchant Team</p>
+                        </div>
+                        <span>July 2022 - Mar 2024</span>
                     </div>
-                </div>
+                    <ul>
+                        <li>Built and maintained merchant onboarding and management platform features handling 0.5M+ daily requests.</li>
+                        <li>Implemented GIS-based agent assignment using polygon territory management.</li>
+                        <li>Migrated data retrieval workflows from relational databases to ElasticSearch, reducing response times by 35%.</li>
+                        <li>Worked on production issues, bottleneck analysis, scalability improvements, maintainability, and system reliability.</li>
+                    </ul>
+                </article>
 
-                <div class="dots-container">
-                    <span class="dot active" onclick="showCard(0)"></span>
-                    <span class="dot" onclick="showCard(1)"></span>
-                    <span class="dot" onclick="showCard(2)"></span>
-                </div>
+                <article class="experience-card compact-card">
+                    <div class="role-meta">
+                        <div>
+                            <h3>Software Engineer Intern</h3>
+                            <p>Paytm</p>
+                        </div>
+                        <span>Jan 2022 - July 2022</span>
+                    </div>
+                    <ul>
+                        <li>Resolved backend defects, improved component reliability, and maintained operational excellence reports.</li>
+                    </ul>
+                </article>
             </div>
         </section>
 
-        <section id="experience" class="section experience-section">
-            <div class="content">
-                <h1>Work Experience</h1>
-                <div class="experience-timeline">
-                    <article class="exp-item">
-                        <div class="exp-header">
-                            <h3>Software Development Engineer <span>(Blackbuck)</span></h3>
-                            <p class="exp-duration">Mar 2025 - Present</p>
-                        </div>
-                        <p class="exp-domain">Payments | FASTag</p>
-                        <ul>
-                            <li>Led end-to-end architecture, design, development, and delivery of BBPS integration from HLD to production, enabling third-party FASTag recharges across multiple providers while meeting NPCI compliance and settlement requirements.</li>
-                            <li>Designed scalable microservice-based payment workflows for settlement, reconciliation, and transaction lifecycle management.</li>
-                            <li>Implemented AutoPay e-mandates with Juspay for mandate creation, tokenization, and recurring payment orchestration with high reliability.</li>
-                            <li>Strengthened payment reliability with robust error handling, idempotency controls, retry mechanisms, and lifecycle safeguards.</li>
-                            <li>Worked with AWS-based infrastructure supporting scalable microservice and payment processing systems in an Agile/Scrum environment.</li>
-                        </ul>
-                    </article>
+        <section id="systems" class="section systems-section">
+            <div class="section-heading">
+                <p class="eyebrow">System Case Studies</p>
+                <h2>Built for correctness, scale, and production recovery.</h2>
+            </div>
+            <div class="systems-grid">
+                <article>
+                    <span>01</span>
+                    <h3>BBPS FASTag Recharge Platform</h3>
+                    <p>Event-driven payment service with PayU integration, third-party FASTag recharge support, NPCI-compliant settlement, and an extensible biller onboarding model.</p>
+                    <div class="tag-list">
+                        <span>Java</span><span>Spring Boot</span><span>Kafka</span><span>Redis</span><span>AWS</span>
+                    </div>
+                </article>
+                <article>
+                    <span>02</span>
+                    <h3>AutoPay E-Mandate System</h3>
+                    <p>End-to-end mandate lifecycle with Juspay integration, tokenisation, debit presentation workflows, reconciliation, retries, and transaction state management.</p>
+                    <div class="tag-list">
+                        <span>Juspay</span><span>Idempotency</span><span>Settlement</span><span>Kubernetes</span>
+                    </div>
+                </article>
+                <article>
+                    <span>03</span>
+                    <h3>Reliability & Observability</h3>
+                    <p>Reduced batch processing time, fixed slow query paths, handled high-CPU incidents, and added monitoring plus alerting for payment service health.</p>
+                    <div class="tag-list">
+                        <span>Monitoring</span><span>Retries</span><span>RCA</span><span>Performance</span>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-                    <article class="exp-item">
-                        <div class="exp-header">
-                            <h3>Software Development Engineer <span>(Paytm)</span></h3>
-                            <p class="exp-duration">2022 - 2024</p>
-                        </div>
-                        <p class="exp-domain">Tech-Merchant team</p>
-                        <ul>
-                            <li>Designed, developed, and maintained RESTful APIs for high-scale merchant onboarding and management systems handling over 0.5 million requests daily.</li>
-                            <li>Optimized backend performance by migrating data retrieval workflows from relational databases to ElasticSearch, reducing response times by 25%.</li>
-                            <li>Built scalable GIS-based agent assignment solutions, improving operational efficiency and territory management accuracy with polygon-based territory mapping.</li>
-                            <li>Participated in architecture discussions, code reviews, and design decisions using Object-Oriented Design principles and coding best practices.</li>
-                            <li>Troubleshot complex production issues, analyzed bottlenecks, and improved scalability, maintainability, and system reliability.</li>
-                        </ul>
-                    </article>
+        <section id="ai-engineering" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">AI-Assisted Engineering</p>
+                <h2>Using AI where it improves engineering quality, traceability, and support speed.</h2>
+            </div>
+            <div class="ai-grid">
+                <article>
+                    <h3>Claude Code Engineering Harness</h3>
+                    <p>Co-developed a workflow for PRD completeness, codebase analysis, implementation planning, approval gates, code generation, JUnit test creation, and release/ticket validation with execution logs for traceability.</p>
+                </article>
+                <article>
+                    <h3>FASTag Flow Observability</h3>
+                    <p>Built step-level observability for purchase and recharge flows with state and failure annotations to pinpoint production failures faster.</p>
+                </article>
+                <article>
+                    <h3>Debugging Skill Development</h3>
+                    <p>Developing a Claude Code debugging skill that analyzes transaction logs and requests to identify failed steps and provide first-level root-cause diagnosis.</p>
+                </article>
+            </div>
+        </section>
 
-                    <article class="exp-item">
-                        <div class="exp-header">
-                            <h3>Software Engineer Intern <span>(Paytm)</span></h3>
-                            <p class="exp-duration">January - July 2022</p>
-                        </div>
-                        <ul>
-                            <li>Improved service robustness with stronger exception handling, production bug fixes, and performance-focused backend optimizations.</li>
-                            <li>Worked as a back-end intern, compiled and maintained operational excellence reports, and provided key insights into system efficiency.</li>
-                            <li>Actively resolved software defects, helping improve reliability of core system components.</li>
+        <section id="projects" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Projects</p>
+                <h2>Backend projects that reinforce systems depth.</h2>
+            </div>
+            <div class="project-grid">
+                <article class="project-card project-feature">
+                    <h3>MiniRedis</h3>
+                    <p>Redis-inspired in-memory key-value store in Java using TCP networking, TTL expiration, LRU eviction, concurrent client handling, atomic INCR/DECR operations, and O(1) key lookup.</p>
+                    <p class="stack">Java • TCP • Concurrency • Caching • Data Structures</p>
+                    <a href="https://github.com/harshita-12/miniredis" target="_blank" rel="noreferrer">View Project</a>
+                </article>
+                <article class="project-card">
+                    <h3>Twitter Clone</h3>
+                    <p>Social media platform with registration, login, tweet posting, retweeting, and profile views.</p>
+                    <p class="stack">Java • Spring MVC • MySQL • HTML • CSS</p>
+                    <a href="https://github.com/harshita-12/twitter_clone" target="_blank" rel="noreferrer">View Project</a>
+                </article>
+                <article class="project-card">
+                    <h3>Library Management System</h3>
+                    <p>Book store website with featured books, user sign-up, cart management, and order completion journeys.</p>
+                    <p class="stack">HTML • CSS • JavaScript</p>
+                    <a href="https://harshita-12.github.io/online-book-store/" target="_blank" rel="noreferrer">Live Demo</a>
+                </article>
+                <article class="project-card">
+                    <h3>Product Recommendation System</h3>
+                    <p>Content-based recommendation system using NLP models to suggest similar products from e-commerce data.</p>
+                    <p class="stack">Python • BoW • TF-IDF • Word2Vec • NLP</p>
+                    <a href="https://github.com/harshita-12/product-recommendation-ai/blob/main/recommendations.ipynb" target="_blank" rel="noreferrer">View Notebook</a>
+                </article>
+                <article class="project-card">
+                    <h3>Dominant Color Extraction</h3>
+                    <p>Image palette analysis using K-Means clustering to extract dominant colors from uploaded images.</p>
+                    <p class="stack">Python • ML • K-Means</p>
+                    <a href="https://github.com/harshita-12/Dominant_Color_Extraction/blob/main/Dominat_color_extraction/Me_dominant_color_extraction.ipynb" target="_blank" rel="noreferrer">View Notebook</a>
+                </article>
+                <article class="project-card">
+                    <h3>Face Recognition System</h3>
+                    <p>Face detection and recognition pipeline using K-NN classification with OpenCV and HaarCascade.</p>
+                    <p class="stack">Python • OpenCV • K-NN • HaarCascade</p>
+                </article>
+            </div>
+        </section>
 
-                        </ul>
-                    </article>
-                    <article class="exp-item">
-                        <div class="exp-header">
-                            <h3>Technical Content Writer <span>(Sahu Technologies)</span></h3>
-                            <p class="exp-duration">September - December 2021</p>
-                        </div>
-                        <ul>
-                            <li>Created technical content and documentation focused on software development concepts and practical implementation.</li>
-                            <li>Developed a book store website using HTML, CSS, and JavaScript.</li>
-                        </ul>
-                    </article>
+        <section id="skills" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Skills</p>
+                <h2>Core backend toolkit.</h2>
+            </div>
+            <div class="skills-grid">
+                <article>
+                    <h3>Programming</h3>
+                    <p>Java, Python, C/C++, SQL</p>
+                </article>
+                <article>
+                    <h3>Backend</h3>
+                    <p>Spring Boot, Hibernate, REST, Microservices, Kafka, Redis</p>
+                </article>
+                <article>
+                    <h3>Data</h3>
+                    <p>MySQL, ElasticSearch, MongoDB, NoSQL</p>
+                </article>
+                <article>
+                    <h3>Cloud & DevOps</h3>
+                    <p>AWS, Kubernetes, Docker, Jenkins, Git, CI/CD</p>
+                </article>
+                <article>
+                    <h3>AI Tooling</h3>
+                    <p>Claude Code, LangChain, RAG, Chroma, Copilot</p>
+                </article>
+                <article>
+                    <h3>Systems Focus</h3>
+                    <p>Payments, settlement, reconciliation, idempotency, observability, production RCA</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="education" class="section split-section">
+            <div>
+                <div class="section-heading">
+                    <p class="eyebrow">Education</p>
+                    <h2>Education</h2>
                 </div>
+                <p><strong>Harcourt Butler Technical University</strong></p>
+                <p>B.Tech. in Computer Science & Engineering, 2018 - 2022</p>
+                <p>CGPA: 7.85 / 10</p>
+                <p>Coursework: DSA, DBMS, OS, Computer Networks, C, C++, Algorithm Analysis, Software Engineering</p>
+            </div>
+            <div class="achievement-stack">
+                <h3>Recognition</h3>
+                <a href="https://lnkd.in/p/gn9tjANC" target="_blank" rel="noreferrer">Stand Out Performer Award, Blackbuck</a>
+                <a href="https://lnkd.in/p/gAZ2yvc7" target="_blank" rel="noreferrer">Rising Star Certificate, Paytm</a>
+                <span>Advanced Diploma in Computer Application</span>
+                <span>300+ coding problems solved</span>
             </div>
         </section>
 
-        <section id="ai-engineering" class="section ai-section">
-            <div class="content">
-                <h1>AI-Assisted Engineering</h1>
-                <div class="ai-showcase">
-                    <article class="ai-row">
-                        <h3>Codebase Knowledge AI</h3>
-                        <p>Built a Retrieval-Augmented Generation system for natural-language querying over software repositories using repository ingestion, vector indexing, semantic retrieval, and context-aware answer generation.</p>
-                    </article>
-                    <article class="ai-row">
-                        <h3>Release Validation Automation</h3>
-                        <p>Worked with the team on AI-powered productivity workflows for PR checks, deployment steps, database/config verification, and automated RCA support to reduce manual effort across planning, production readiness, and incident triage.</p>
-                    </article>
-                    <article class="ai-row">
-                        <h3>Developer Delivery Workflows</h3>
-                        <p>Developed reusable Claude Code skills and automation pipelines for requirement interpretation, implementation planning, code analysis, test generation, and release validation.</p>
-                    </article>
-                </div>
+        <section id="beyond-work" class="section beyond-section">
+            <div class="section-heading">
+                <p class="eyebrow">Beyond Work</p>
+                <h2>Beyond work.</h2>
+            </div>
+            <div class="hobby-slider">
+                <article class="hobby-card">
+                    <h3>Nature</h3>
+                    <img src="images/nature.jpg" alt="Nature">
+                    <p>Nature helps me reset and think clearly.</p>
+                </article>
+                <article class="hobby-card">
+                    <h3>Traveling</h3>
+                    <img src="images/travel.jpg" alt="Traveling">
+                    <p>I enjoy exploring places, cultures, and landscapes.</p>
+                </article>
+                <article class="hobby-card">
+                    <h3>Reading</h3>
+                    <img src="images/reading.jpg" alt="Reading">
+                    <p>Books are my favorite way to slow down and learn.</p>
+                </article>
+            </div>
+            <div class="dots-container" aria-label="Hobby slider controls">
+                <button class="dot active" type="button" onclick="showCard(0)" aria-label="Show nature"></button>
+                <button class="dot" type="button" onclick="showCard(1)" aria-label="Show traveling"></button>
+                <button class="dot" type="button" onclick="showCard(2)" aria-label="Show reading"></button>
             </div>
         </section>
 
-        <section id="education" class="section">
-            <div class="content">
-                <h1>Education</h1>
-                <p>
-                    <strong>Harcourt Butler Technical University (HBTU), Kanpur (2018-2022)</strong><br>
-                    B.Tech. in Computer Science and Engineering<br>
-                    CGPA: 7.85 / 10<br>
-                    Coursework: DSA, DBMS, Operating Systems, Computer Networks, C, C++, Algorithm Analysis, Software Engineering<br><br>
-                    <strong>S.V.M.V.P Girls Inter College (2017):</strong><br>
-                    Higher Secondary Certificate<br><br>
-                    <strong>Advanced Diploma in Computer Applications</strong><br>
-                </p>
+        <section id="contact" class="contact-section">
+            <div>
+                <p class="eyebrow">Contact</p>
+                <div>Open to SDE-2 backend and payments platform opportunities.</div>
             </div>
-        </section>
-
-        <section id="projects" class="section projects-section">
-            <div class="content">
-                <h1>Projects</h1>
-                <div class="projects-showcase">
-                    <article class="project-row project-row-featured">
-                        <h3>Twitter Clone: Scalable Social Media Platform</h3>
-                        <p class="project-description">Designed a Twitter clone using Spring MVC and Java with core social features like sign up, login, tweet posting, retweeting, and profile view. Optimized backend APIs to maintain response times under 50 ms.</p>
-                        <p class="project-stack">Spring MVC, Java, MySQL, HTML, CSS</p>
-                        <div class="project-actions">
-                            <a class="project-button" href="https://github.com/harshita-12/twitter_clone" target="_blank" rel="noreferrer">View Project</a>
-                        </div>
-                    </article>
-
-                    <article class="project-row">
-                        <h3>Library Management System (Books4U)</h3>
-                        <p class="project-description">Built a user-friendly book store website with featured books, user sign-up flow, cart management, and order completion journeys.</p>
-                        <p class="project-stack">HTML, CSS, JavaScript</p>
-                        <div class="project-actions">
-                            <a class="project-button" href="https://harshita-12.github.io/online-book-store/" target="_blank" rel="noreferrer">Live Demo</a>
-                            <a class="project-button project-button-secondary" href="https://github.com/harshita-12/online-book-store" target="_blank" rel="noreferrer">Source Code</a>
-                        </div>
-                    </article>
-
-                    <article class="project-row">
-                        <h3>Product Recommendation System</h3>
-                        <p class="project-description">Engineered a content-based recommendation system using NLP models to recommend similar products for e-commerce scenarios with Amazon product data.</p>
-                        <p class="project-stack">Python, BoW, TF-IDF, Word2Vec, NLP</p>
-                        <div class="project-actions">
-                            <a class="project-button" href="https://github.com/harshita-12/product-recommendation-ai/blob/main/recommendations.ipynb" target="_blank" rel="noreferrer">View Notebook</a>
-                        </div>
-                    </article>
-
-                    <article class="project-row">
-                        <h3>Dominant Color Extraction</h3>
-                        <p class="project-description">Extracted K dominant colors from images using K-Means clustering to analyze and summarize visual palettes efficiently.</p>
-                        <p class="project-stack">Python, ML (K-Means)</p>
-                        <div class="project-actions">
-                            <a class="project-button" href="https://github.com/harshita-12/Dominant_Color_Extraction/blob/main/Dominat_color_extraction/Me_dominant_color_extraction.ipynb" target="_blank" rel="noreferrer">View Notebook</a>
-                        </div>
-                    </article>
-
-                    <article class="project-row">
-                        <h3>Face Recognition System</h3>
-                        <p class="project-description">Implemented K-NN classification with OpenCV and HaarCascade for precise frontal face detection and recognition pipelines.</p>
-                        <p class="project-stack">Python, ML, OpenCV</p>
-                        <div class="project-actions">
-                            <span class="project-note">Project details available on request</span>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="achievements" class="section">
-            <div class="content">
-                <h1>Achievements</h1>
-                <div class="achievements-showcase">
-                    <article class="achievement-row">
-                        <p class="achievement-tag">Recognition</p>
-                        <h3>Stand Out Performer Award</h3>
-                        <p class="achievement-desc">Received the Stand Out Performer award for efficient performance at Blackbuck.</p>
-                        <img src="images/rockstar.jpg" alt="Stand Out Performer Award">
-                    </article>
-                    <article class="achievement-row">
-                        <p class="achievement-tag">Recognition</p>
-                        <h3>Rising Star Award</h3>
-                        <p class="achievement-desc">Received Rising Star Certificate for performance at Paytm.</p>
-                        <img src="images/risingstar.jpg" alt="Rising Star Certificate">
-                    </article>
-                    <article class="achievement-row">
-                        <p class="achievement-tag">Certification</p>
-                        <h3>AI Mafia Certificate</h3>
-                        <p class="achievement-desc">Earned certification from Coding Club for AI Mafia.</p>
-                        <img src="images/aimafia.jpg" alt="Certificate of AI Mafia by Coding Club">
-                    </article>
-                    <article class="achievement-row achievement-row-highlight">
-                        <p class="achievement-tag">Coding</p>
-                        <h3>300+ Problems Solved</h3>
-                        <p class="achievement-desc">Solved 300+ coding problems across leading competitive programming platforms.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="section skills-section">
-            <div class="content">
-                <h1>Skills</h1>
-                <div class="skills-grid">
-                    <article class="skill-group">
-                        <h3>Languages</h3>
-                        <p>Java, Python, C/C++, SQL</p>
-                    </article>
-                    <article class="skill-group">
-                        <h3>Backend</h3>
-                        <p>Spring Boot, Spring MVC, Hibernate, REST APIs, Microservices, Kafka</p>
-                    </article>
-                    <article class="skill-group">
-                        <h3>Cloud & Systems</h3>
-                        <p>AWS, Cloud-native Applications, SaaS Platforms, Distributed Systems</p>
-                    </article>
-                    <article class="skill-group">
-                        <h3>Databases</h3>
-                        <p>MySQL, PostgreSQL, ElasticSearch, MongoDB, NoSQL</p>
-                    </article>
-                    <article class="skill-group">
-                        <h3>AI & Productivity</h3>
-                        <p>RAG, LLM Applications, LangChain, Prompt Engineering, Vector Databases, Claude Code, GitHub Copilot, Codex, Windsurf, Kiro</p>
-                    </article>
-                    <article class="skill-group">
-                        <h3>DevOps & Tools</h3>
-                        <p>Git, Bitbucket, Jenkins, Docker, CI/CD, IntelliJ, Postman, JIRA, Kibana, Grafana, NewRelic, Confluence</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section">
-            <div class="content">
-                <h1>Contact Me</h1>
-                <p><strong>Phone:</strong> +91 9129465611</p>
-                <p><strong>Email:</strong> harshitaarun12@gmail.com</p>
-                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/harshita-arun-589ab6192/" target="_blank" rel="noreferrer">LinkedIn Profile</a></p>
-                <p><strong>Address:</strong> Hardoi, Uttar Pradesh, India</p>
+            <div class="contact-actions">
+                <a href="mailto:harshitaarun12@gmail.com">harshitaarun12@gmail.com</a>
+                <a href="tel:+919129465611">+91 91294 65611</a>
+                <a href="https://www.linkedin.com/in/harshita-arun/" target="_blank" rel="noreferrer">LinkedIn Profile</a>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2026 Created by Harshita Arun.</p>
+        <p>&copy; 2025 Harshita Arun. Built for backend systems, payments, and production ownership.</p>
     </footer>
 
     <script src="script.js"></script>

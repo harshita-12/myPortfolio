@@ -50,8 +50,10 @@ window.showCard = showCard;
 document.addEventListener('DOMContentLoaded', () => {
     const slider = document.querySelector('.hobby-slider');
     const cards = document.querySelectorAll('.hobby-card');
-    const sections = document.querySelectorAll('.section');
+    const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-link');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
 
     if (!slider || !cards.length) {
         // Keep nav highlighting functional even if slider is removed later.
@@ -106,6 +108,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
         updateActiveSection();
         window.addEventListener('scroll', updateActiveSection, { passive: true });
+    }
+
+    if (menuToggle && nav) {
+        menuToggle.addEventListener('click', () => {
+            const isOpen = nav.classList.toggle('open');
+            menuToggle.setAttribute('aria-expanded', String(isOpen));
+        });
+
+        navLinks.forEach((link) => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('open');
+                menuToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
     }
 
     const expItems = document.querySelectorAll('.exp-item');
